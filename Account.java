@@ -2,7 +2,6 @@ public class Account { // POJO / DTO
     private String name;
     private Integer id;
     private Double balance;
-    // add other attributes
     public Account() {
     }
 
