@@ -23,7 +23,7 @@ public class BankServiceImpl implements BankService{
             throw new AccountException("Account null");
         }
         if (account.getBalance < amount){
-            throw new AccountException("Balance insufficient");
+            throw new AccountException("Insufficient Balance");
         }
         account.setBalance(account.getBalance()-amount);
         return account.getBalance();
@@ -36,9 +36,6 @@ public class BankServiceImpl implements BankService{
 
     @Override
     public Boolean fundTransfer(Account fromAccount, Account toAccount, Double amount) throws AccountException {
-        // from & to account != null
-        // amount should be +ve
-        // check if fromAccount has sufficent balance return false;
         if (fromAccount.getBalance()<amount)
         {
             throw new AccountException("Insufficient Balance");
