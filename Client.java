@@ -6,11 +6,11 @@ public class Client {
         Account accountTwo = new Account(2,"India",100.0);
         System.out.println(account.toString());
 
-        try {
-            bankService.addFundsToAccount(null,250.0);
-        } catch (AccountException e) {
-            e.printStackTrace();
-        }
+   //     try {
+     //       bankService.addFundsToAccount(null,250.0);
+       // } catch (AccountException e) {
+         //   e.printStackTrace();
+        //}
 
         try {
             bankService.addFundsToAccount(null,250.0);
